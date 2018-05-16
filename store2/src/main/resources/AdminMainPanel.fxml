@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="678.0" prefWidth="1003.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Admin.AdminMainPanel">
+   <children>
+      <Button fx:id="addProductButton" layoutX="39.0" layoutY="55.0" mnemonicParsing="false" onAction="#clickAddProductButton" prefHeight="25.0" prefWidth="119.0" text="Add product" />
+      <Button fx:id="showDetailsBasketButton" layoutX="57.0" layoutY="372.0" mnemonicParsing="false" onAction="#clickDetailsBasketButton" text="Show details" />
+      <TableView fx:id="productTable" layoutX="203.0" layoutY="57.0" prefHeight="266.0" prefWidth="765.0">
+         <columns>
+            <TableColumn fx:id="nameColumn" minWidth="0.0" prefWidth="122.0" text="Name" />
+            <TableColumn fx:id="priceColumn" prefWidth="121.0" text="Price" />
+            <TableColumn fx:id="categoryColumn" prefWidth="130.0" text="Category" />
+            <TableColumn fx:id="availableColumn" prefWidth="130.0" text="Available" />
+            <TableColumn fx:id="inBasketColumn" prefWidth="130.0" text="In baskets" />
+            <TableColumn fx:id="soldColumn" prefWidth="130.0" text="Sold" />
+         </columns>
+      </TableView>
+      <CheckBox fx:id="availableCheckBox" layoutX="39.0" layoutY="173.0" mnemonicParsing="false" onAction="#clickAvailableCheckBox" prefHeight="17.0" prefWidth="119.0" text="Show available" />
+      <TableView fx:id="baskteTable" layoutX="206.0" layoutY="361.0" prefHeight="277.0" prefWidth="765.0">
+         <columns>
+            <TableColumn fx:id="idOrderColumn" maxWidth="172.0" minWidth="100.0" prefWidth="159.0" text="Order Id" />
+            <TableColumn fx:id="dateColumn" maxWidth="172.0" minWidth="100.0" prefWidth="159.0" text="Date" />
+            <TableColumn fx:id="customerColumn" maxWidth="172.0" minWidth="100.0" prefWidth="159.0" text="Customer" />
+            <TableColumn fx:id="itemsColumn" maxWidth="203.0" minWidth="100.0" prefWidth="109.0" text="Items" />
+            <TableColumn fx:id="valueColumn" maxWidth="262.0" minWidth="100.0" prefWidth="194.0" text="Order Value" />
+         </columns>
+      </TableView>
+      <Button fx:id="logOutButton" layoutX="57.0" layoutY="538.0" mnemonicParsing="false" onAction="#clickLogOutButton" prefHeight="90.0" prefWidth="83.0" text="sign out" />
+      <Button fx:id="refreshButton" layoutX="73.0" layoutY="234.0" mnemonicParsing="false" onAction="#clickRefreshButton" text="Refresh" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="406.0" prefWidth="574.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Customer.CustomerEditBasket">
+   <children>
+      <ImageView fx:id="imageView" fitHeight="300.0" fitWidth="300.0" layoutX="14.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Users/Romek/Desktop/300x300.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="productText" layoutX="324.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Product" wrappingWidth="223.13671875">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Text>
+      <Text fx:id="inBasketText" layoutX="328.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="In basket:" wrappingWidth="84.13671875" />
+      <Button fx:id="changeButton" layoutX="476.0" layoutY="94.0" mnemonicParsing="false" onAction="#clickChangeButton" prefHeight="25.0" prefWidth="71.0" text="Change" />
+      <Text layoutX="328.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Change quantity:" wrappingWidth="95.0" />
+      <TextField fx:id="inputValue" layoutX="423.0" layoutY="94.0" prefHeight="25.0" prefWidth="44.0" />
+      <Text fx:id="priceForOneText" layoutX="328.0" layoutY="208.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price for one:" wrappingWidth="105.13671875" />
+      <Button fx:id="closeButton" layoutX="26.0" layoutY="27.0" mnemonicParsing="false" onAction="#clickCloseButton" text="Close" />
+      <Text fx:id="quantityAvailableText" layoutX="328.0" layoutY="174.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Available:" wrappingWidth="139.13671875" />
+      <Text fx:id="messageText" layoutX="324.0" layoutY="149.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="223.13671875" />
+      <Text fx:id="priceForAllText" layoutX="328.0" layoutY="242.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price for all:" wrappingWidth="105.13671875" />
+   </children>
+</AnchorPane>

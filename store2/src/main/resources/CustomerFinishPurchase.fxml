@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Customer.CustomerFinishPurchasePanel">
+   <children>
+      <Text fx:id="finalText" layoutX="93.0" layoutY="127.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="395.13671875">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Text>
+      <Button fx:id="backButton" layoutX="257.0" layoutY="220.0" mnemonicParsing="false" onAction="#clickBackButton" text="Back to Shop" />
+   </children>
+</AnchorPane>

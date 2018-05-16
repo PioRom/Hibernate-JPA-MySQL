@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Customer.CustomerHistoryPanel">
+   <children>
+      <TableView fx:id="productTable" layoutX="69.0" layoutY="48.0" prefHeight="260.0" prefWidth="463.0">
+        <columns>
+          <TableColumn fx:id="dateColumn" maxWidth="172.0" minWidth="100.0" prefWidth="159.0" text="Date" />
+          <TableColumn fx:id="itemsColumn" maxWidth="203.0" minWidth="100.0" prefWidth="150.0" text="Items" />
+            <TableColumn fx:id="valueColumn" maxWidth="262.0" minWidth="100.0" prefWidth="153.0" text="Order Value" />
+        </columns>
+      </TableView>
+      <Button fx:id="detailsButton" layoutX="69.0" layoutY="330.0" mnemonicParsing="false" onAction="#clickDetailButton" prefHeight="25.0" prefWidth="145.0" text="Details" />
+      <Button fx:id="returnButton" layoutX="387.0" layoutY="330.0" mnemonicParsing="false" onAction="#clickReturnButton" prefHeight="25.0" prefWidth="145.0" text="Return" />
+   </children>
+</AnchorPane>

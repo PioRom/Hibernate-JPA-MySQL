@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="434.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Customer.CustomerBasketPanel">
+   <children>
+      <TableView fx:id="productTable" layoutX="82.0" layoutY="85.0" prefHeight="152.0" prefWidth="442.0">
+        <columns>
+          <TableColumn fx:id="nameColumn" prefWidth="104.0" text="Item" />
+            <TableColumn fx:id="priceForOneColumn" prefWidth="113.0" text="Price for one" />
+          <TableColumn fx:id="quantityColumn" prefWidth="103.0" text="Ordered quantity" />
+            <TableColumn fx:id="priceColumn" prefWidth="121.0" text="Price for all" />
+        </columns>
+      </TableView>
+      <Button fx:id="editButton" layoutX="77.0" layoutY="307.0" mnemonicParsing="false" onAction="#clickEditButton" prefHeight="25.0" prefWidth="125.0" text="Edit order" />
+      <Button fx:id="confirmButton" layoutX="399.0" layoutY="367.0" mnemonicParsing="false" onAction="#clickConfirmButton" prefHeight="25.0" prefWidth="125.0" text="Confirm" />
+      <Button fx:id="deleteButton" layoutX="210.0" layoutY="307.0" mnemonicParsing="false" onAction="#clickDeleteButton" prefHeight="25.0" prefWidth="125.0" text="Delete product" />
+      <Text fx:id="itemsText" layoutX="238.0" layoutY="263.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Items: " wrappingWidth="125.0" />
+      <Text fx:id="sumText" layoutX="399.0" layoutY="263.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sum: " wrappingWidth="125.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Button fx:id="returnButton" layoutX="77.0" layoutY="367.0" mnemonicParsing="false" onAction="#clickReturnButton" prefHeight="25.0" prefWidth="125.0" text="Return" />
+      <Button fx:id="refreshButton" layoutX="100.0" layoutY="255.0" mnemonicParsing="false" onAction="#clickRefreshButton" text="Refresh" />
+   </children>
+</AnchorPane>

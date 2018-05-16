@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="784.0" prefWidth="941.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Customer.CustomerMainPanel">
+   <children>
+      <TableView fx:id="productTable" layoutX="265.0" layoutY="149.0" prefHeight="561.0" prefWidth="473.0">
+        <columns>
+          <TableColumn fx:id="nameColumn" minWidth="0.0" prefWidth="148.0" text="Name" />
+            <TableColumn fx:id="priceColumn" prefWidth="140.0" text="Price" />
+            <TableColumn fx:id="descriptionColumn" prefWidth="183.0" text="Description" />
+        </columns>
+      </TableView>
+      <Button fx:id="buyButton" layoutX="44.0" layoutY="233.0" mnemonicParsing="false" onAction="#clickBuyButton" prefHeight="25.0" prefWidth="171.0" text="See details / buy" />
+      <Text fx:id="loginMessage" layoutX="44.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="279.13671875">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Text>
+      <Button fx:id="signOutButton" layoutX="766.0" layoutY="18.0" mnemonicParsing="false" onAction="#clickSingOutButton" prefHeight="60.0" prefWidth="143.0" text="Log out" />
+      <Button fx:id="ordersButton" layoutX="578.0" layoutY="18.0" mnemonicParsing="false" onAction="#clickOrdersButton" prefHeight="60.0" prefWidth="143.0" text="Your orders" />
+      <TextField fx:id="minPriceInput" layoutX="44.0" layoutY="440.0" onAction="#minPriceInputField" prefHeight="25.0" prefWidth="67.0" />
+      <TextField fx:id="maxInputPrice" layoutX="129.0" layoutY="440.0" onAction="#fieldMaxInputPrice" prefHeight="25.0" prefWidth="67.0" />
+      <Button fx:id="basketButton" layoutX="766.0" layoutY="186.0" mnemonicParsing="false" onAction="#clickBasketButton" prefHeight="60.0" prefWidth="143.0" text="Basket" />
+      <Button fx:id="searchByPriceButton" layoutX="43.0" layoutY="483.0" mnemonicParsing="false" onAction="#clickSearchByPriceButton" prefHeight="25.0" prefWidth="155.0" text="Search by price" />
+      <Text layoutX="118.0" layoutY="457.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-" wrappingWidth="5.13671875" />
+   </children>
+</AnchorPane>

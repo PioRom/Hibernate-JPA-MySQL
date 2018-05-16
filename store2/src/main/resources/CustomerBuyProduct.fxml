@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="468.0" prefWidth="599.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Customer.CustomerBuyProduct">
+   <children>
+      <Text fx:id="priceText" layoutX="383.0" layoutY="208.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price:" wrappingWidth="164.13671875">
+         <font>
+            <Font size="25.0" />
+         </font></Text>
+      <Button fx:id="buyButton" layoutX="390.0" layoutY="75.0" mnemonicParsing="false" onAction="#clickBuyButton" prefHeight="25.0" prefWidth="101.0" text="Add to Basket" />
+      <ImageView fx:id="imageView" fitHeight="300.0" fitWidth="300.0" layoutX="36.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Users/Romek/Desktop/300x300.png" />
+         </image></ImageView>
+      <TextField fx:id="quantityInput" layoutX="503.0" layoutY="75.0" prefHeight="25.0" prefWidth="60.0" promptText="quantity" />
+      <Text fx:id="descriptionTexr" layoutX="56.0" layoutY="371.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description:" wrappingWidth="526.13671875">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <Text fx:id="quantityAvailableText" layoutX="390.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Available:" wrappingWidth="139.13671875" />
+      <Button fx:id="returnButton" layoutX="36.0" layoutY="19.0" mnemonicParsing="false" onAction="#clickReturnButton" text="Return" />
+      <Text fx:id="messageText" layoutX="390.0" layoutY="159.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="150.13671875" />
+      <Text fx:id="productText" layoutX="391.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Product" wrappingWidth="223.13671875">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

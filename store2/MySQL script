@@ -1,0 +1,48 @@
+CREATE TABLE `product` (
+`product_id` int not null auto_increment,
+`name` varchar(20) default null unique,
+`price` int default null,
+`category` varchar(20) default null,
+`photo` longblob default null,
+primary key (`product_id`)
+)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+create table `storage`(
+`id` int not null auto_increment,
+`availability` int,
+`inbasket` int,
+`sold` int,
+primary key(`id`),
+constraint `product_1` foreign key (`id`) references `product` (`product_id`)
+)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+create table Customer(
+`customer_id` int not null auto_increment,
+`name` varchar(20) not null,
+`phone` varchar(11) not null,
+`email` varchar(40),
+`address` varchar(50),
+`password` varchar(30),
+primary key (customer_id)
+)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+alter table customer add unique(name);
+alter table customer add unique(phone,email);
+
+create table basket(
+`basket_id` int not null auto_increment,
+`total_value` int,
+`total_items` int,
+`customer_id` int not null,
+`date` date,
+`time` time,
+primary key (`basket_id`),
+key `customer_id` (`customer_id`),
+constraint `basket_1` foreign key (`customer_id`) references `customer`(`customer_id`)
+)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+create table `basket_product`(
+`basket_id` int NOT NULL,
+`product_id` int NOT NULL,
+constraint `fk_basket` foreign key(`basket_id`) references `basket` (`basket_id`),
+constraint `fk_product` foreign key(`product_id`) references `product` (`product_id`)
+)ENGINE=InnoDB DEFAULT CHARSET=utf8;
