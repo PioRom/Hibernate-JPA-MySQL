@@ -45,9 +45,9 @@ public class AddTestValue {
             tx = session.beginTransaction();
 
             session.save(product);
-           // session.save(customer);
+            session.save(customer);
             session.save(storage);
-           // session.save(basket);
+            session.save(basket);
 
             tx.commit();
 
